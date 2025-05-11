@@ -1,0 +1,541 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif; /* Замените на шрифт из дизайна, если известен */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9; /* Светлый фон, как на макете */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #2c3e50; /* Темно-синий/серый для заголовков */
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; /* Цвет ссылок */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #2c5242; /* Темно-зеленый, как на кнопках */
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1e3a2f;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0; /* Светло-серый для кнопок "В корзину" */
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px; /* Настройте размер логотипа */
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #555;
+    font-weight: 500;
+}
+header nav ul li a:hover {
+    color: #2c5242;
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #f0f4f8; /* Светлый фон для hero, если нет полноэкранного изображения */
+    padding: 60px 0; /* Увеличьте отступы */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.8em; /* Увеличьте размер заголовка */
+    color: #2c5242; /* Темно-зеленый */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right; /* Или center, в зависимости от того, как изображение должно выглядеть */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Небольшое скругление углов */
+}
+
+/* Trusted By Section */
+.trusted-by {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.trusted-by p {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.trusted-by .logos img {
+    height: 25px; /* Настройте размер логотипов компаний */
+    margin: 0 15px;
+    opacity: 0.7;
+    filter: grayscale(50%); /* Можно сделать их менее яркими */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.about-us-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-us-image {
+    flex: 1;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-us-text {
+    flex: 1;
+}
+
+.about-us-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-us-text ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-us-text ul li img {
+    width: 16px; /* Размер иконки-галочки */
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* Popular Furniture Section */
+.popular-furniture {
+    padding: 60px 0;
+}
+
+.popular-furniture h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Адаптивная сетка */
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px; /* Фиксированная высота для единообразия */
+    object-fit: cover; /* Чтобы изображение не искажалось */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #2c5242; /* Зеленый цвет для цены */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card .price del {
+    color: #999;
+    font-weight: normal;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+/* All Furniture Banner Section */
+.all-furniture-banner {
+    background-color: #e9eef2; /* Светлый фон, как на макете */
+    padding: 60px 0;
+}
+
+.all-furniture-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.all-furniture-text {
+    flex: 1;
+}
+
+.all-furniture-text h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.all-furniture-text p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.filter-options span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 8px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px; /* Овальные кнопки */
+    font-size: 0.9em;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.filter-options span:hover {
+    background-color: #f0f0f0;
+}
+
+
+.all-furniture-image {
+    flex: 1;
+    text-align: center;
+}
+
+.all-furniture-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.testimonials-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.testimonial-image-side {
+    flex-basis: 40%; /* Задает начальный размер элемента */
+    /* Здесь может быть фоновое изображение или декоративный элемент */
+}
+.testimonial-image-side img {
+    max-width: 100%;
+    border-radius: 8px; /* Пример */
+}
+
+
+.testimonial-text {
+    flex-basis: 60%;
+}
+
+.testimonial-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonial-text blockquote {
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9; /* Фон для цитаты */
+    border-left: 5px solid #2c5242; /* Акцентная линия */
+    border-radius: 5px;
+}
+
+.testimonial-text blockquote p {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.testimonial-text blockquote footer {
+    font-size: 0.9em;
+    color: #777;
+    text-align: right;
+}
+
+/* Subscribe Section */
+.subscribe {
+    padding: 50px 0;
+    background-color: #f0f4f8; /* Или другой цвет фона, как на макете */
+    text-align: center;
+}
+
+.subscribe h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe input[type="email"] {
+    padding: 12px 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Скругление левых углов */
+    flex-grow: 1; /* Чтобы поле занимало доступное пространство */
+    outline: none;
+}
+
+.subscribe button[type="submit"] {
+    border-radius: 0 5px 5px 0; /* Скругление правых углов */
+}
+
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Темный фон для футера */
+    color: #f0f0f0; /* Светлый текст */
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Для переноса колонок на маленьких экранах */
+    gap: 20px; /* Пространство между колонками */
+    padding-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px; /* Минимальная ширина колонки */
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column h5 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #bdc3c7; /* Светло-серый для ссылок */
+    font-size: 0.9em;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons a img {
+    width: 24px; /* Размер соц. иконок */
+    height: 24px;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+.social-icons a img:hover {
+    opacity: 1;
+}
+
+.footer-subscribe input[type="email"] {
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #3e5062;
+    color: #fff;
+    border-radius: 3px 0 0 3px;
+    width: calc(100% - 90px); /* Ширина поля минус ширина кнопки */
+    box-sizing: border-box;
+}
+.footer-subscribe input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+.footer-subscribe button {
+    padding: 10px 15px;
+    background-color: #2c5242;
+    color: #fff;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #4a5e70; /* Разделитель */
+    font-size: 0.85em;
+    color: #bdc3c7;
+}
+
+/* Адаптивность (пример) */
+@media (max-width: 768px) {
+    .hero-content, .about-us-content, .all-furniture-content, .testimonials-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image, .about-us-image, .all-furniture-image, .testimonial-image-side {
+        margin-bottom: 30px;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        min-width: 100%;
+    }
+    .subscribe form {
+        flex-direction: column;
+    }
+    .subscribe input[type="email"], .subscribe button[type="submit"] {
+        width: 100%;
+        max-width: 300px; /* Ограничение для поля ввода на моб. */
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}
