@@ -185,7 +185,22 @@ header nav ul li a:hover {
     height: auto;
     border-radius: 8px;
 }
-
+.about-us_2{
+    display: flex;
+    flex-wrap: wrap;
+    height: 517px;
+    width: 436px;
+}
+.ab{
+    display: flex;
+}
+.h2_ab{
+    margin-bottom: 14px;
+}
+.about_img{
+    margin-right: 30px;
+    margin-bottom: 42px;
+}
 .about-us-text {
     flex: 1;
 }
